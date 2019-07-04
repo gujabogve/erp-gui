@@ -1,0 +1,32 @@
+{
+  "name": "erp-gui",
+  "version": "1.0.0",
+  "description": "erp bar gui",
+  "main": "app/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "build --win",
+    "ship": "build --win -p always"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gujabogve/erp-gui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gujabogve/erp-gui/issues"
+  },
+  "homepage": "https://github.com/gujabogve/erp-gui#readme",
+  "devDependencies": {
+    "electron": "^5.0.6",
+    "electron-builder": "^20.44.4"
+  },
+  "dependencies": {
+    "electron-updater": "^4.0.14"
+  },
+  "build": {
+    "appId": "erp.bar.gui"
+  }
+}

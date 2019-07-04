@@ -1,10 +1,23 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Electron AutoUpdater</title>
 </head>
+
 <body>
-Hello world 2
+<script>
+    const ipcRenderer = require('electron').ipcRenderer;
+    // wait for an updateReady message
+    ipcRenderer.on('updateReady', function(event, text) {
+        // changes the text of the button
+        var container = document.getElementById('ready');
+        container.innerHTML = "new version ready!";
+    })
+</script>
+Version: <span id="version">v0.1.10</span>
+<!-- the button onClick sends a quitAndInstall message to the electron main process -->
+<button id="ready" onClick="ipcRenderer.send('quitAndInstall')">no updates ready</button>
+
 </body>
+
 </html>

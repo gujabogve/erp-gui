@@ -1,18 +1,15 @@
 <html lang="en">
-
 <head>
     <title>Electron AutoUpdater</title>
 </head>
-
 <body>
-
 Hello world
 <script>
-    const ipcRenderer = require('electron').ipcRenderer;
+    import {ipcRenderer} from "electron";
     // wait for an updateReady message
     ipcRenderer.on('updateReady', function(event, text) {
         // changes the text of the button
-        var container = document.getElementById('ready');
+        let container = document.getElementById('ready');
         container.innerHTML = "new version ready!";
     })
 </script>

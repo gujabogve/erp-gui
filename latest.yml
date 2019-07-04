@@ -1,0 +1,8 @@
+version: 1.1.0
+files:
+  - url: erp-gui-setup-1.1.0.exe
+    sha512: NAaxIHoTJXihT9jUFm8eIAQfGB2X8p25Dpro0W/Tv0y4UFxpfDjUMFNvRaG1snpkFp79l/k7L1Tym7NsClv5TQ==
+    size: 44351961
+path: erp-gui-setup-1.1.0.exe
+sha512: NAaxIHoTJXihT9jUFm8eIAQfGB2X8p25Dpro0W/Tv0y4UFxpfDjUMFNvRaG1snpkFp79l/k7L1Tym7NsClv5TQ==
+releaseDate: '2019-07-04T13:40:31.992Z'

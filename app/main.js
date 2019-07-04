@@ -15,6 +15,7 @@ autoUpdater.on('update-downloaded', (info) => {
 });
 app.on('ready', () => {
     createDefaultWindow();
+    console.log('hey');
     autoUpdater.checkForUpdates();
 });
 ipcMain.on("quitAndInstall", (event, arg) => {
